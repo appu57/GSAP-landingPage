@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-block{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left-container{
+    background-color: darkblue;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.right-container{
+    position: relative;
+    width: 67%;
+    height: 100%;
+}
+
+.fourth-container{
+    position: absolute;
+    width: 45vw;
+    height: 50vh;
+    background-color: rgb(27, 72, 218);
+    top: 15vh;
+    left: 20%;
+    box-shadow: 7px 0px 20px 0  black;
+}
+
+.logo h2{
+    color: beige;
+    font-size: 33px;
+    padding: 10%;
+}
+
+.info{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    color: beige;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.info a{
+    text-decoration: none;
+    color: beige;
+}
+
+.second-container{
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    height: 33%;
+    padding: 10%;
+
+}
+
+.second-container h2{
+   position: absolute;
+   right: 10%;
+   top: 50px;
+   font-size: 50px;
+   float: right;
+   margin-bottom: 10px;
+}
+
+.second-container p{
+    margin-left: 10px;
+    font-size: 18px;
+    padding-left: 5px;
+    letter-spacing: 0.5px;
+
+}
+
+
+/* .menu-container{
+    position: absolute;
+    width: 33px;
+    height: 45px;
+    top: 10px;
+    right: 10px;
+}
+
+.menu , .menu:before , .menu:after{
+    width: 33px;
+    height: 5px;
+    background-color: black;
+}
+
+.menu:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+
+}
+
+.menu:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+
+} */
+
+.third-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.third-container p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.first-conttainer{   /*Empty div to create a movable background moves from left 0 to left 100*/
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    background-color: darkblue;
+    left: 0;
+    /* animation: overlay 2s cubic-bezier(0.074,0.09,0.5,0.92) forwards; */
+}
+
+@keyframes overlay {
+    0%{
+        width: 0%;
+        left: 0;
+    }
+
+    50%{
+        left: 0;
+        width: 100%;
+    }
+
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+}
